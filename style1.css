@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+    gap: 5px; 
+    scroll-behavior: smooth;
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --edges:  #00FF00;
+    --text-white: #ffffff;
+    --bg-blue: #8e7aeb;
+    --bg-yellow: #e6e926;
+  }
+.bg-yellow {
+    --edges: #e6e826;
+}  
+.bg-blue {
+    --edges: #8e7aeb;
+} 
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background:var(--bg-cards);
+    height: 1600px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "imagem projects projects"
+    "imagem onix1 onix2"
+    "imagem onix1 onix2"
+    "icones recent recent"
+    "icones foto foto"
+    "icones foto foto"
+    "tecnologia dowload dowload"
+    "tecnologia dowload dowload"
+    "experiencia dowload dowload"
+    "experiencia dowload dowload"
+    "experiencia dowload dowload"
+    "educaçao dowload dowload"
+    "educaçao dowload dowload"
+    "educaçao dowload dowload"
+    "rodape rodape rodape";
+    
+}
+/*xxxxxxx  imagem xxxxxxxx*/
+.imagem {
+    grid-area: imagem; 
+    background: var(--body-bg-color);
+    justify-content: center;
+    align-items: center;
+    width: 348px;
+    height: 292px;
+    padding: 50px;
+    border-radius: 30px;    
+}
+
+.imagem img {
+    border-radius: 60px;
+    border: 1px solid var(--edges);
+}
+/*xxxxxxx  projects xxxxxxxx*/
+
+.projects {
+    grid-area: projects;
+    background: var(--body-bg-color);
+    width: 848px;
+    height: 86px;
+    padding: 20px;
+    border-radius: 30px;
+    justify-content: space-between;
+}
+.typing {
+    color: var(--edges);
+}
+.typing-2 {
+    color: var(--edges);
+}
+.typing-3{
+    color: var(--edges);
+}
+
+a {
+    margin: 15px;
+    text-decoration: none;
+}
+/*xxxxxxx  onix1 xxxxxxxx*/
+
+.onix1 {
+    grid-area: onix1;
+    background: var(--body-bg-color);
+    width: 420px;
+    height: 193px;
+    padding: 10px;
+    border-radius: 30px;
+
+
+}
+/*xxxxxxx  onix2 xxxxxxxx*/
+
+.onix2 {
+    grid-area: onix2;
+    background: var(--body-bg-color);
+    width: 420px;
+    height: 193px;
+    padding: 10px;
+    border-radius: 30px;
+
+
+}
+/*xxxxxxx  icones  xxxxxxxx*/
+
+.icones {
+    grid-area: icones;
+    background: var(--body-bg-color);
+    width: 348px;
+    height: 348px;
+    padding: 40px;
+    gap: 30px;
+    border-radius: 30px;
+    
+
+}
+
+.icones li {
+    list-style: none;
+    margin: 15px;
+    color: var(--edges);
+}
+.icones li a img:hover {
+    color: var(--edges);
+
+}
+/*xxxxxxx  recent xxxxxxxx*/
+
+.recent {
+    grid-area: recent;
+    background: var(--body-bg-color);
+    width: 848px;
+    height: 86px;
+    padding: 20px;
+    border-radius: 30px;
+
+
+}
+/*xxxxxxx  foto  xxxxxxxx*/
+
+.foto {
+    grid-area: foto;
+    background: var(--body-bg-color);
+    width: 848px;
+    height: 253px;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.foto img {
+    border-radius: 60px;
+    padding: 5px;
+    border: 1px solid var(--edges);
+    display: block;
+}
+/*xxxxxxx  tecnologia  xxxxxxxx*/
+
+.tecnologia {
+    grid-area: tecnologia;
+    background: var(--body-bg-color);
+    width: 348px;
+    height: 208px;
+    padding: 15px;
+    border-radius: 30px;
+
+}
+
+.tecnologia input {
+    color: var(--body-bg-color);
+    padding: 10px;
+    border-radius: 30px;
+    margin: 2px;
+    margin-top: 8px;
+    background-color: var(--bg-techs);
+    background: none;
+    border: var(--edges) 2px solid;
+}
+.tecnologia input {
+    color:var(--text-white);
+}
+.tecnologia input:hover {
+    color: var(--edges);
+}
+/*xxxxxxx  dowload  xxxxxxxx*/
+
+.dowload {
+    grid-area: dowload;
+    background: var(--body-bg-color);
+    width: 848px;
+    height: 909px;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 60px auto;
+}
+.download img {
+    width: 100px;
+    height: 100px;
+}
+.download img {
+    width: 100px;
+    height: 100px;
+}
+.download img {
+    width: 100px;
+    height: 100px;
+}
+.download img {
+    border-radius: 50px;
+    border: 1px solid var(--edges);
+    padding: 3px;
+    margin-top: 5px;
+
+}
+.download a:hover {
+    color: var(--edges);
+}
+.imagens {
+    margin-left: 50px;
+}
+
+/*xxxxxxx  experiencia  xxxxxxxx*/
+
+.experiencia {
+    grid-area: experiencia;
+    background: var(--body-bg-color);
+    width: 348px;
+    height: 349px;
+    padding: 30px;
+    border-radius: 30px;
+} 
+
+.experiencia li {
+    list-style: none;
+    margin: 30px;
+
+}
+/*xxxxxxx  educação xxxxxxxx*/
+
+.educaçao {
+    grid-area: educaçao;
+    background: var(--body-bg-color);
+    width: 348px;
+    height: 352px;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.educaçao li {
+    list-style: none;
+    margin: 30px;
+}
+/*xxxxxxx  rodape   xxxxxxxx*/
+.rodape {
+    grid-area: rodape;
+
+}
+.rodape footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-white);
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+/*xxxxxxx  responsivo  xxxxxxxx*/
+@media(max-width:1050px){
+
+    .container {
+        display:grid;
+        width: auto;
+        height: auto;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        "imagem projects"
+        "imagem onix2"
+        "imagem onix2"
+        "icones recent"
+        "icones foto foto"
+        "icones foto foto"
+        "tecnologia download"
+        "tecnologia download"
+        "experiencia download"
+        "experiencia download"
+        "experiencia dowload"
+        "educaçao dowload"
+        "educaçao dowload"
+        "educaçao dowload"
+        "rodape rodape rodape";
+        
+    }
+    .projects {
+        width: auto;
+        
+    }
+    .onix1 {
+        width: auto;
+
+    }
+    .onix2 {
+        width: auto;
+        height: auto;
+    }
+    .recent {
+        width: auto;
+    }
+    .foto {
+        width: auto;
+    }
+    .download {
+        width: auto;
+    }
+}
+@media(max-width:500px){
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        "projects projects"        
+        "foto foto"
+        "foto foto"
+        "dowload dowload"
+        "dowload dowload"
+        "rodape rodape";
+    }    
+    .imagem {
+        display: none;
+    }
+    .icones {
+        display: none;
+    }
+    .tecnologia {
+        display: none;
+    }
+    .experiencia {
+        display: none;
+    }
+    .educaçao {
+        display: none;
+    }
+    .projects {
+        width: 400px;
+    }
+    .onix1 {
+        display: none;
+    }
+    .onix2 {
+        display: none;
+    }
+    .recent {
+        display: none;
+    }
+    .foto {
+        width: 400px;
+    }
+    .dowload {
+        width: 400px;
+    }
+    .footer {
+        width: 50px;
+    }
+
+}
+
+
+
+
